@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2018 at 10:54 AM
+-- Generation Time: Nov 27, 2018 at 07:49 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.1.23
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laravel_movie_manager`
+-- Database: `movie_manager`
 --
 
 -- --------------------------------------------------------
@@ -44,7 +44,9 @@ CREATE TABLE `movies` (
 --
 
 INSERT INTO `movies` (`id`, `name`, `quality`, `path`, `downloads`, `details`, `updated_at`, `created_at`) VALUES
-(2, 'Madhuranga Senadheera', '720', 'lilan.maduranga@gmail.com', 6, 0, '2018-11-25 09:49:27', '2018-11-25 09:49:27');
+(2, 'naniya', '1080', 'lilan.maduranga@gmail.com', 26, 0, '2018-11-25 09:49:27', '2018-11-25 09:49:27'),
+(4, 'Spider man1', '720', 'hello wolrld', 21, 0, '2018-11-25 09:49:27', '2018-11-25 09:49:27'),
+(12, 'ffff', '1080', 'sss', 4, 0, '2018-11-27 04:32:56', '2018-11-27 04:32:56');
 
 -- --------------------------------------------------------
 
@@ -62,7 +64,8 @@ CREATE TABLE `qualities` (
 --
 
 INSERT INTO `qualities` (`id`, `quality`) VALUES
-(1, '720');
+(1, '720'),
+(2, '1080');
 
 --
 -- Indexes for dumped tables
@@ -88,13 +91,13 @@ ALTER TABLE `qualities`
 -- AUTO_INCREMENT for table `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `qualities`
 --
 ALTER TABLE `qualities`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
